@@ -40,4 +40,6 @@ jobs:
           node-version: 19.9.0
       
       - name: Install Packages
-        run: npm install
+        run: |
+          npm ci
+          npm deploy
